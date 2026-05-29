@@ -27,8 +27,7 @@
         <h2>Sobre mim</h2>
 
         <img src="https://media.licdn.com/dms/image/v2/D4D03AQGyU4AczivE1Q/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1686156043238?e=1781740800&v=beta&t=66YjhAciE5w5AxMYodipeQKbxpi-nSGXCKryePAOkgg"
-            alt="Imagem de foto de perfil"title="Foto de perfil de Jaqueline" 
-        >
+            alt="Imagem de foto de perfil" title="Foto de perfil de Jaqueline">
 
         <article>
 
@@ -65,14 +64,44 @@
 
 
                 <section id="contato">
+
                     <h2>Contato</h2>
+
                     <p>Tem um projeto em mente? Entre em contato!</p>
 
-                    <address>
-                        E-mail: <a href="mailto:jaquelinecostaalves.jca@gmail.com">jaquelinecostaalves.jca@gmail.com</a>
+                    <form action="">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
                         <br>
-                        Telefone: <a href="tel:1111111111">(11) 1111-1111</a>
-                    </address>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <br>
+
+
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone">
+                        <br>
+
+                        <label for="assunto">Assunto:</label>
+                        <select name="assunto" id="assunto">
+                            <option value="orcamento">Orçamento</option>
+                            <option value="duvida">Dúvida</option>
+                            <option value="outro">Outros</option>
+                        </select>
+                        <br>
+
+                        <label for="message">Mensagem:</label> <br>
+                        <textarea name="mensagem" id="mensagem" cols="30" rows="10" required></textarea>
+                        <br>
+
+                        <input type="checkbox" id="inscricao" name="inscricao">
+                        <label for="inscricao">Deseja receber minha newsletter? Fique por dentro!</label>
+                        <br>
+
+                        <input type="submit" value="Enviar mensagem">
+
+                    </form>
 
                 </section>
             </footer>
